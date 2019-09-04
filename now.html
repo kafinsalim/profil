@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hello from Kafin Salim</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,500,700" rel="stylesheet">
+    <style>
+        body{
+            background: lightblue;
+            font-family: 'Rubik', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: calc(10px + 0.33vw);
+            -webkit-font-smoothing: antialiased;
+            padding: 5vh 10vw;
+            color: #121314;
+        }
+        @media screen and (max-width: 750px) {
+            .content{
+                grid-template-columns: auto !important;
+                text-align: center;
+            }
+            .photo{
+                margin: auto;
+                width: 175px;
+            }
+            .panel-profile{
+                display: block !important;
+            }
+            .profile{
+                margin: auto !important;
+            }
+            .panel{
+                border: 0px !important;
+            }
+            p{
+                max-width: 450px;
+                margin: auto;
+            }
+        }
+        p{
+            line-height: 1.2rem;
+        }
+        body, ul{
+            margin: 0px;
+            padding: 0px;
+        }
+        #app{
+            margin: auto;
+        }
+        ul#menu{
+            display: flex;
+            margin: auto;
+            height: 25px;
+        }
+        ul#menu li {
+            display:inline-block;
+            width: 33%;
+            height: 25px;
+            text-align: center;
+            vertical-align: middle;
+            margin: 0px auto;
+            padding: 15px 5px 10px 5px;
+            font-size: 1.1rem;
+        }
+        .menu1{
+            background-color: lightseagreen;
+        }
+        .menu2{
+            background-color: lightsalmon;
+        }
+        .menu3{
+            background-color: lightblue;
+            padding: 15px 5px 5px 5px !important;
+            border-bottom: 5px solid slateblue;
+        }
+        header{
+            position: fixed;
+            width: 100%;
+        }
+        footer{
+            background-color: springgreen;
+            text-align: center;
+            height: 15px;
+            padding: 15px 0px;
+            position: fixed;
+            width: 100%;
+            bottom: 0px;
+        }
+        li a{
+            color: black;
+            text-decoration: none;
+            transition: 0.1s;
+        }
+        li a:hover{
+            color: navy;
+            font-size: 1.2rem;
+        }
+        .panel a {
+            text-decoration: none;
+            color: #121314;
+            position: relative;
+            cursor: pointer;
+        }
+        .panel a:after {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            top: 60%;
+            left: -0.1em;
+            right: -0.1em;
+            bottom: 0;
+            transition: top 200ms cubic-bezier(0, .8, .13, 1);
+            background-color: rgba(89,112,181,0.5);
+        }
+        .panel a:hover:after {
+            top: 0%;
+        }
+        .photo{
+            background-image: url("img/avatar-kafin.jpg");
+            background-size: 100%;
+            border-radius: 50%;
+            min-width: 175px;
+            height: 175px;
+        }
+        .profile{
+            margin-left: 25px;
+        }
+        .content{
+            grid-template-columns: 50% auto;
+            grid-gap: 50px 25px;
+            padding: 80px 25px 80px 25px;
+            text-align: center;
+        }
+        .panel{
+            padding: 19px;
+            min-height: 175px;
+            overflow: hidden;
+            border-left: 5px solid black;
+        }
+        .panel-profile{
+            display: flex;
+        }
+        ul#information{
+            list-style: none;
+        }
+        ul#information li{
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <header>
+            <nav>
+                <ul id="menu">
+                    <li class="menu1"><a id="menu1" href="index.html"
+                        onmouseover='document.getElementById(this.id).innerHTML = "😂 Kafin"' 
+                        onmouseout='document.getElementById(this.id).innerHTML = "😁 Kafin"'>😁 Kafin</a></li>
+                    <li class="menu2"><a id="menu2" href="resume.html"
+                        onmouseover='document.getElementById(this.id).innerHTML = "😜 Resume"' 
+                        onmouseout='document.getElementById(this.id).innerHTML = "😎 Resume"'>😎 Resume</a></li>
+                    <li class="menu3"><a id="menu3" href="now.html"
+                        onmouseover='document.getElementById(this.id).innerHTML = "🤗 Now"' 
+                        onmouseout='document.getElementById(this.id).innerHTML = "🤨 Now"'>🤨 Now</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="content">
+                <h2>What Am I Doing Now? 👨🏼‍💻</h2>
+                <ul id="information">
+                    <li>Working full-time in <a href="http://ralali.com">Ralali.com</a> as Mobile Engineer</li>
+                    <li>Staying in Jakarta</li>
+                    <li>Focusing on React & React Native Technologies</li>
+                    <li>Still trying to read books</li>
+                    <li>Find more friends</li>
+                </ul>
+        </div>
+        <footer>
+            <p>Copyright 2019 Hello from Kafin Salim</p>
+        </footer>
+    </div>
+    <script>
+        
+    </script>
+</body>
+</html>
